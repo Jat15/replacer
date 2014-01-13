@@ -223,10 +223,10 @@ replacer.replace = function( itemstack, user, pointed_thing, mode )
 
 
 minetest.register_craft({
-        output = 'replacer:replacer',
-        recipe = {
-                { 'default:chest', '',              '' },
-                { '',              'default:stick', '' },
-                { '',              '',              'default:chest' },
-        }
+		output = 'replacer:replacer',
+		recipe = {
+				{ 'default:chest', 'default:obsidian',				'default:obsidian' },
+				{ 'default:obsidian',				'default:stick', 'default:obsidian' },
+				{ 'default:obsidian',				'default:obsidian',				'default:chest' },
+		}
 })
