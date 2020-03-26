@@ -90,6 +90,7 @@ end
 
 replacer.has_technic_mod = minetest.get_modpath('technic')
 
+replacer.datastructures = dofile(path .. "/datastructures.lua")
 -- adds a tool for inspecting nodes and entities
 dofile(path .. "/inspect.lua")
 dofile(path .. "/replacer_blabla.lua")
